@@ -26,15 +26,15 @@ function Router() {
             path: "/auth",
             children: [
                 {
-                    path: "/signup",
+                    path: "signup",
                     element: <Signup />
                 },
                 {
-                    path: "/login",
+                    path: "login",
                     element: <Login />
                 },
                 {
-                    path: "/logout",
+                    path: "logout",
                     element: <Logout />
                 }
             ]
