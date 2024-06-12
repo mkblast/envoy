@@ -58,7 +58,7 @@
   border-radius: 5px;
 }
 
-.submit:hover, .submit:focus-visible {
+.submit:hover:not(:disabled), .submit:focus-visible:not(:disabled) {
   border-color: var(--14);
 }
 
