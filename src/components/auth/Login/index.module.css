@@ -1,0 +1,73 @@
+.form {
+  height: 100%;
+  display: flex;
+  gap: 2em;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.form>h1 {
+  font-size: 2em;
+  font-weight: bolder;
+}
+
+.form>h3 * {
+  text-decoration: none;
+}
+
+.redirect:visited, .redirect:link, .redirect:active {
+  color: var(--2);
+}
+
+.information {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5em;
+}
+
+.inputs {
+  height: 2em;
+  padding: 10px;
+  font-size: 1em;
+  font-weight: bold;
+  background-color: var(--8);
+  border: solid 2px var(--7);
+  border-radius: 5px;
+  color: var(--fg);
+  width: 18em;
+  max-width: 100%;
+}
+
+.inputs:focus-visible {
+  border-color: var(--14);
+}
+
+.submit {
+  width: 8em;
+  height: 2.5em;
+  max-width: 30%;
+  font-size: 1em;
+  font-weight: bold;
+  background-color: var(--4);
+  color: var(--fg);
+  border: solid 2px var(--4);
+  border-radius: 5px;
+}
+
+.submit:hover, .submit:focus-visible {
+  border-color: var(--14);
+}
+
+.submit:disabled {
+  background-color: var(--8);
+}
+
+.errors {
+  flex-grow: 1;
+  font-weight: bold;
+  color: var(--9);
+}
