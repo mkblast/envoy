@@ -3,6 +3,7 @@ import { Message } from "../../../types";
 import { useEffect, useState } from "react";
 import NewMessage from "./NewMessage";
 import Messages from "./Messages";
+import Styles from "./index.module.css";
 
 function ChatWindow() {
     const [messages, setMessages] = useState<Message[] | null>(null);
@@ -28,13 +29,9 @@ function ChatWindow() {
     }, [API_URI, id, token]);
 
     return (
-        <div>
-            <div>
-                <Messages messages={messages} id={id!} />
-            </div >
-            <div>
-                <NewMessage id={id} setMessages={setMessages} token={token!} />
-            </div>
+        <div className={Styles.window}>
+            <Messages messages={messages} id={id!} />
+            <NewMessage id={id} setMessages={setMessages} token={token!} />
         </div>
     );
 }

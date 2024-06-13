@@ -1,5 +1,6 @@
 import { ChangeEvent, Dispatch, SetStateAction, useState } from "react";
 import { Message } from "../../../types";
+import Styles from "./NewMessage.module.css";
 
 type NewMessageProps = {
     id: string | undefined;
@@ -33,11 +34,12 @@ function NewMessage(
         const newMessage: Message = json.message;
 
         setMessages(prev => [...prev!, newMessage]);
+        setMessage("");
     }
 
     return (
         id ?
-            <form onSubmit={e => {
+            <form className={Styles.form} onSubmit={e => {
                 e.preventDefault();
                 handleSubmit();
             }}>

@@ -1,0 +1,51 @@
+.messages {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  overflow: scroll;
+  padding: 1em;
+  gap: 1em;
+}
+
+.message {
+  font-weight: bold;
+  max-width: 50%;
+  padding: 0.1em 1em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border-radius: 20px;
+  word-wrap: break-word;
+}
+
+.message:last-child {
+  margin-top: 3em;
+}
+
+.me {
+  align-self: flex-end;
+  background-color: var(--2);
+}
+
+.reciever {
+  align-self: flex-start;
+  background-color: var(--bg);
+}
+
+.date_me,
+.date_res {
+  margin-top: -0.5em;
+  font-size: 0.6em;
+}
+
+.date_me {
+  align-self: flex-end;
+}
+
+.state {
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
