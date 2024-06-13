@@ -1,4 +1,4 @@
-import { useEffect, useRef, useState } from "react";
+import { useEffect, useState } from "react";
 import { User } from "../../../types";
 import { Link, useParams } from "react-router-dom";
 import Styles from "./index.module.css";
