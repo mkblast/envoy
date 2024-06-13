@@ -33,7 +33,8 @@ function UsersList(
             users.length !== 0 ?
                 <div className={Styles.users}>
                     {users.map(user => (
-                        <Link to={`/m/${user._id}`} key={user._id} className={`${Styles.user} ${user._id === id! && Styles.selected}`}>
+                        <Link to={`/m/${user._id}`} key={user._id}
+                            className={`${Styles.user} ${user._id === id! && Styles.selected}`}>
                             {user.first_name} {user.last_name}
                         </Link>
                     ))}
