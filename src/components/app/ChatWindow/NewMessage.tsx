@@ -1,5 +1,5 @@
 import { ChangeEvent, Dispatch, SetStateAction, useState } from "react";
-import { Message } from "../../types";
+import { Message } from "../../../types";
 
 type NewMessageProps = {
     id: string | undefined;

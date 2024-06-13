@@ -3,8 +3,8 @@ import App from "./App";
 import Signup from "./components/auth/Signup";
 import Login from "./components/auth/Login";
 import Logout from "./components/auth/Logout";
-import ChatWindow from "./components/ChatWindow";
-import ChatPlaceHolder from "./components/ChatPlaceholder";
+import ChatWindow from "./components/app/ChatWindow";
+import ChatPlaceHolder from "./components/app/ChatPlaceholder";
 
 function Router() {
     const router = createBrowserRouter([

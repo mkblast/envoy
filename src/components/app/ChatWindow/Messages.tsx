@@ -1,4 +1,4 @@
-import { Message } from "../../types";
+import { Message } from "../../../types";
 
 type MessagesProps = {
     messages: Message[] | null,

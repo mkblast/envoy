@@ -1,5 +1,5 @@
 import { useParams } from "react-router-dom";
-import { Message } from "../../types";
+import { Message } from "../../../types";
 import { useEffect, useState } from "react";
 import NewMessage from "./NewMessage";
 import Messages from "./Messages";
@@ -23,17 +23,19 @@ function ChatWindow() {
 
             setMessages(json.messages);
         })();
+
+        return () => setMessages(null);
     }, [API_URI, id, token]);
 
     return (
-        <>
+        <div>
             <div>
                 <Messages messages={messages} id={id!} />
             </div >
             <div>
                 <NewMessage id={id} setMessages={setMessages} token={token!} />
             </div>
-        </>
+        </div>
     );
 }
 
