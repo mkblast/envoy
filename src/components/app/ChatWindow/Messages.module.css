@@ -1,7 +1,7 @@
 .messages {
   height: 100%;
   display: flex;
-  flex-direction: column;
+  flex-direction: column-reverse;
   justify-content: space-between;
   align-items: center;
   overflow: scroll;
@@ -10,18 +10,15 @@
 }
 
 .message {
+  margin: 0;
   font-weight: bold;
   max-width: 50%;
-  padding: 0.1em 1em;
+  padding: 0 1em;
   display: flex;
   flex-direction: column;
   justify-content: center;
   border-radius: 20px;
   word-wrap: break-word;
-}
-
-.message:last-child {
-  margin-top: 3em;
 }
 
 .me {
@@ -36,7 +33,7 @@
 
 .date_me,
 .date_res {
-  margin-top: -0.5em;
+  margin-top: -1em;
   font-size: 0.6em;
 }
 

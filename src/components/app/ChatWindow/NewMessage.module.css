@@ -1,4 +1,26 @@
 .form {
   display: flex;
   justify-content: center;
+  height: 5%;
+  margin: 0.5em;
+  gap: 1em;
+}
+
+.form > input {
+  font-weight: bold;
+  color: var(--fg);
+  background-color: var(--bg);
+  padding-left: 1em;
+  flex-grow: 1;
+  border: none;
+  border-radius: 15px;
+}
+
+.form > button {
+  font-weight: bold;
+  flex-grow: 0.1;
+  color: var(--fg);
+  background-color: var(--2);
+  border-radius: 15px;
+  border: none;
 }

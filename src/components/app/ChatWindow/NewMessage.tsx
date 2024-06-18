@@ -33,7 +33,7 @@ function NewMessage(
         const json = await res.json();
         const newMessage: Message = json.message;
 
-        setMessages(prev => [...prev!, newMessage]);
+        setMessages(prev => [newMessage, ...prev!]);
         setMessage("");
     }
 
