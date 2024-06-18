@@ -24,12 +24,16 @@ function Messages(
                         message.reciever._id === id ?
                             <div className={`${Styles.message} ${Styles.me}`} key={message._id}>
                                 <p>{message.body}</p>
-                                <p className={Styles.date_me}>{convertISOToTime(message.date)}</p>
+                                <p className={Styles.date_me}>
+                                    {convertISOToTime(message.date)}
+                                </p>
                             </div>
                             :
                             <div className={`${Styles.message} ${Styles.reciever}`} key={message._id}>
                                 <p>{message.body}</p>
-                                <p className={Styles.date_res}>{convertISOToTime(message.date)}</p>
+                                <p className={Styles.date_res}>
+                                    {convertISOToTime(message.date)}
+                                </p>
                             </div>
                     ))
                     :

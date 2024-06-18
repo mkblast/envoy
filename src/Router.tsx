@@ -5,6 +5,7 @@ import Login from "./components/auth/Login";
 import Logout from "./components/auth/Logout";
 import ChatWindow from "./components/app/ChatWindow";
 import ChatPlaceHolder from "./components/app/ChatPlaceholder";
+import Profile from "./components/Profile";
 
 function Router() {
     const router = createBrowserRouter([
@@ -19,6 +20,10 @@ function Router() {
                 {
                     path: "/m/:id",
                     element: <ChatWindow />
+                },
+                {
+                    path: "/u/:id",
+                    element: <Profile />
                 }
             ]
         },
